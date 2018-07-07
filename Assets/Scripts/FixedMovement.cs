@@ -7,6 +7,9 @@ public class FixedMovement : MonoBehaviour {
     public GameObject[] waypoints;
     private int i = 0;
     public float speed = 5.0f;
+    public GameObject woman;
+    public GameObject[] car;
+
 
     // Use this for initialization
     void Start () {
@@ -27,8 +30,10 @@ public class FixedMovement : MonoBehaviour {
         {
             //switch next waypoint
             i++;
-            transform.Rotate(0, 180, 0);
+            woman.transform.Rotate(0, 180, 0);
+            
         }
 
     }
+    
 }
